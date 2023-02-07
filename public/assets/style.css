@@ -42,3 +42,28 @@ main {
 .footer-shadow {
   box-shadow: 0 -4px 8px 1px rgba(0, 0, 0, 0.32);
 }
+
+.transition-fadeOut {
+  animation: fadeOut 400ms;
+}
+.transition-fadeIn {
+  animation: fadeIn 1400ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
