@@ -45,17 +45,20 @@ export const onChangePage = (page) => {
     (current) =>
       current.dom.className === "d-block .transition-fadeIn" ||
       current.dom.className === "d-block transition-fadeIn"
-  );
-  if (currentPage) currentPage.dom.className = "transition-fadeOut";
+  ); // Find the current page
+
+  const pageMap = pageTo_DOM_Map.find((pageMap) => pageMap.page === page); // find the page that was clicked
+
+  if (currentPage === pageMap) return; //do noting if is the smae page
+
+  if (currentPage) currentPage.dom.className = "transition-fadeOut"; // fade-out for the current page
 
   setTimeout(() => {
     pageTo_DOM_Map.forEach((pageMap) => {
       pageMap.dom.className = "d-none";
     }); // hide all pages
 
-    const pageMap = pageTo_DOM_Map.find((pageMap) => pageMap.page === page); // find the page that was clicked
-
-    if (pageMap) return (pageMap.dom.className = "d-block transition-fadeIn"); // show the page that was clicked
+    if (pageMap) return (pageMap.dom.className = "d-block transition-fadeIn"); // show the page that was clicked wite fade-in
 
     // show 404 page if we got this far (the page was not found, so the 'return' statement was not executed)
     ERROR_PAGE.className = "d-block";
