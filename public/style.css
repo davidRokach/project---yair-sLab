@@ -14,10 +14,6 @@
   cursor: pointer;
 }
 
-main {
-  min-height: 87vh;
-}
-
 .containerVideo {
   position: relative;
   display: grid;
