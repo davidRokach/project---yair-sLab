@@ -23,9 +23,10 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white border">
       <div class="container-fluid ms-5">
-        <a id="home-link" class="navbar-brand cursor ms-5 fs-3" href="#">Rabea Asleh lab</a>
+        <a id="home-link" class="navbar-brand cursor ms-5 fs-3" data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse.show" href="#">Rabea Asleh lab</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          data-target="#collapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon cursor"></span>
         </button>
 
@@ -33,19 +34,24 @@
           <div>
             <ul class="navbar-nav me-auto mb- mb-md-0 ms-4 fs-5">
               <li class="nav-item">
-                <a id="research-page-link" class="nav-link cursor mx-3">Research</a>
+                <a id="research-page-link" class="nav-link cursor mx-3" data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">Research</a>
               </li>
               <li class="nav-item">
-                <a id="publications-page-link" class="nav-link cursor mx-3">Publications</a>
+                <a id="publications-page-link" class="nav-link cursor mx-3" data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">Publications</a>
               </li>
               <li class="nav-item">
-                <a id="resume-page-link" class="nav-link cursor mx-3">Resume</a>
+                <a id="resume-page-link" class="nav-link cursor mx-3" data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">Resume</a>
               </li>
               <li class="nav-item">
-                <a id="lab-team-page-link" class="nav-link cursor mx-3">LabTeam</a>
+                <a id="lab-team-page-link" class="nav-link cursor mx-3" data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">LabTeam</a>
               </li>
               <li class="nav-item">
-                <a id="gallery-page-link" class="nav-link cursor mx-3">Gallery</a>
+                <a id="gallery-page-link" class="nav-link cursor mx-3" data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">Gallery</a>
               </li>
             </ul>
           </div>
@@ -182,20 +188,299 @@
       <div class="center mt-4">
         <div class="col-12 col-md-10 col-xl-8">
           <h1 id="about-page-title" class="text-center display-4">Research</h1>
-          <h2 id="about-page-subtitle" class="fs-5">Welcom to research page</h2>
           <hr />
+
+          <!-- מידע על כל מחקר -->
+          <div class="container px-4 text-center">
+            <div class="row gx-5 mb-5">
+              <div class="col-md col-sm-12">
+                <div class="p-3 ">
+                  <h3 class="mb-3">My research <i class="bi bi-heart-pulse-fill"></i></h3>
+
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni provident aliquid odit quos libero
+                    labore, voluptatum corporis ratione quidem sed necessitatibus recusandae incidunt quam voluptate
+                    eius reiciendis eaque ipsum officiis!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta mollitia ipsam nostrum itaque earum
+                    perferendis omnis exercitationem tenetur, accusamus inventore voluptatum veniam provident maiores
+                    voluptates deleniti aspernatur asperiores iure nihil!
+                  </p>
+                  <ul class="text-start">
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md col-sm-12">
+                <div class="p-3 ">
+                  <h3 class="mb-3">My research <i class="bi bi-heart-pulse"></i></h3>
+
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni provident aliquid odit quos libero
+                    labore, voluptatum corporis ratione quidem sed necessitatibus recusandae incidunt quam voluptate
+                    eius reiciendis eaque ipsum officiis!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta mollitia ipsam nostrum itaque earum
+                    perferendis omnis exercitationem tenetur, accusamus inventore voluptatum veniam provident maiores
+                    voluptates deleniti aspernatur asperiores iure nihil!
+                  </p>
+                  <ul class="text-start">
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-5 mb-5">
+              <div class="col-md col-sm-12">
+                <div class="p-3 ">
+                  <h3 class="mb-3">My research <i class="bi bi-activity"></i></h3>
+
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni provident aliquid odit quos libero
+                    labore, voluptatum corporis ratione quidem sed necessitatibus recusandae incidunt quam voluptate
+                    eius reiciendis eaque ipsum officiis!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta mollitia ipsam nostrum itaque earum
+                    perferendis omnis exercitationem tenetur, accusamus inventore voluptatum veniam provident maiores
+                    voluptates deleniti aspernatur asperiores iure nihil!
+                  </p>
+                  <ul class="text-start">
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md col-sm-12">
+                <div class="p-3 ">
+                  <h3 class="mb-3">My research<i class="bi bi-clipboard2-pulse"></i></h3>
+
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni provident aliquid odit quos libero
+                    labore, voluptatum corporis ratione quidem sed necessitatibus recusandae incidunt quam voluptate
+                    eius reiciendis eaque ipsum officiis!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta mollitia ipsam nostrum itaque earum
+                    perferendis omnis exercitationem tenetur, accusamus inventore voluptatum veniam provident maiores
+                    voluptates deleniti aspernatur asperiores iure nihil!
+                  </p>
+                  <ul class="text-start">
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
         </div>
       </div>
     </div>
-
 
     <!-- דף פרסומים -->
     <div id="publications-page" class="d-none ">
       <div class="center mt-4">
         <div class="col-12 col-md-10 col-xl-8">
-          <h1 id="about-page-title" class="text-center display-4">Publications</h1>
-          <h2 id="about-page-subtitle" class="fs-5">Welcom to publications page</h2>
+          <h1 id="about-page-title" class="text-center 
+          display-4">Publications</h1>
           <hr />
+
+          <!-- רשימת הפרסומים של רביע -->
+          <div class="container text-center">
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h4>A journal name</h4>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Abbott May
+                  ,Norris Rowse,Cole Curtis, <span class="fw-semibold">Rabea Asleh.</span> <a href="#">the name of
+                    research Lorem ipsum dolor
+                    sit,
+                    amet consectetur.</a>
+                  2019 may 22.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -205,8 +490,86 @@
       <div class="center mt-4">
         <div class="col-12 col-md-10 col-xl-8">
           <h1 id="about-page-title" class="text-center display-4">Resume</h1>
-          <h2 id="about-page-subtitle" class="fs-5">Welcom to resume page</h2>
           <hr />
+          <div class="container text-center">
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h5>2022-</h5>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quas quia asperiores.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h5>2021-</h5>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quas quia asperiores.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h5>2020-</h5>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quas quia asperiores.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h5>2018-</h5>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quas quia asperiores.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h5>2016-</h5>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quas quia asperiores.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h5>2012-</h5>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quas quia asperiores.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-2">
+                <h5>2011-</h5>
+              </div>
+              <div class="col-12 col-md-10">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quas quia asperiores.
+                </p>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -214,36 +577,319 @@
     <!-- דף צוות מעבדה -->
     <div id="lab-team-page" class="d-none ">
       <div class="center mt-4">
-        <div class="col-12 col-md-10 col-xl-8">
+        <div class="col-10 col-md-10 col-xl-8">
           <h1 id="about-page-title" class="text-center display-4">Lab team</h1>
-          <h2 id="about-page-subtitle" class="fs-5">Welcom to lab team page</h2>
           <hr />
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="public/assets/images/yair.jpg" class="card-img-top" alt="yair">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair Rokach</h4>
+                  <h5 class="center text-secondary">PhD Student
+                  </h5>
+                  <h4 class="card-text mt-3 d-flex justify-content-evenly ">
+                    <a href="tel:+972542341718"><i class="bi bi-telephone-forward-fill cursor"></i></a>
+                    <a href="mailto:yairrokach2345@gmail.com"><i class="bi bi-envelope-at-fill cursor"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/yair.rokach"><i
+                        class="bi bi-facebook cursor"></i></a>
+                    <a target="_blank" href="https://twitter.com/yairrokach"><i class="bi bi-twitter cursor"></i></a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
         </div>
       </div>
+
+
+
+
     </div>
 
     <!-- דף גלריה -->
     <div id="gallery-page" class="d-none ">
       <div class="center mt-4">
-        <div class="col-12 col-md-10 col-xl-8">
+        <div class="col-10 ">
           <h1 id="about-page-title" class="text-center display-4">Gallery</h1>
-          <h2 id="about-page-subtitle" class="fs-5">Welcom to gallery page</h2>
           <hr />
-        </div>
-      </div>
-    </div>
 
-    <!-- דף שגיאה 404 -->
-    <div id="error-404-page" class="d-none">
-      <div class="center mt-4">
-        <div class="col-12 col-md-10 col-xl-8">
-          <h1 id="about-page-title" class="text-center display-4">ERROR 404</h1>
-          <h2 id="about-page-subtitle" class="fs-5">Page not found</h2>
-          <hr />
-          <p id="return-to-home-page-link" class="cursor text-primary">click to return to home page</p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://img.freepik.com/free-photo/friends-sitting-near-bonfire-smiling-embracing-resting-playing-guitar_176420-4178.jpg?w=740&t=st=1677707457~exp=1677708057~hmac=7e2991a3f4df4064dc5ed969e81587f0541acdd5e13693a67a9ea171adad0ce7"
+                  class="card-img-top" alt="canping, freePic">
+                <div class="card-body">
+                  <h4 class="card-title center">Lab Trip</h4>
+
+                  <div class="center">
+                    <button type="button" class="btn btn-light ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-images" viewBox="0 0 16 16">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                        <path
+                          d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z">
+                        </path>
+                      </svg>
+                      Open gallery <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://img.freepik.com/free-photo/birthday-concept-with-friends-table_23-2147716810.jpg?w=740&t=st=1677707767~exp=1677708367~hmac=fa9208bf2dfb349bc0b856052f64d022f85555ca554977f7e1daf701489463af"
+                  class="card-img-top" alt="birthday, freePic">
+                <div class="card-body">
+                  <h4 class="card-title center">Yair's birthday</h4>
+
+                  <div class="center">
+                    <button type="button" class="btn btn-light ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-images" viewBox="0 0 16 16">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                        <path
+                          d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z">
+                        </path>
+                      </svg>
+                      Open gallery <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://img.freepik.com/free-photo/microbiologist-doctor-taking-blood-sample-tube-from-rack-with-machines-analysis-lab-background_482257-527.jpg?w=740&t=st=1677707965~exp=1677708565~hmac=8b1832f4d434fdb73d0636bdbdae1fd22a1c9ed19b1165d76de7c735e8a5ecce"
+                  class="card-img-top" alt="lab, freePic">
+                <div class="card-body">
+                  <h4 class="card-title center">Day in the lab</h4>
+
+                  <div class="center">
+                    <button type="button" class="btn btn-light ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-images" viewBox="0 0 16 16">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                        <path
+                          d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z">
+                        </path>
+                      </svg>
+                      Open gallery <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://img.freepik.com/free-photo/friends-sitting-near-bonfire-smiling-embracing-resting-playing-guitar_176420-4178.jpg?w=740&t=st=1677707457~exp=1677708057~hmac=7e2991a3f4df4064dc5ed969e81587f0541acdd5e13693a67a9ea171adad0ce7"
+                  class="card-img-top" alt="canping, freePic">
+                <div class="card-body">
+                  <h4 class="card-title center">Lab Trip</h4>
+
+                  <div class="center">
+                    <button type="button" class="btn btn-light ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-images" viewBox="0 0 16 16">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                        <path
+                          d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z">
+                        </path>
+                      </svg>
+                      Open gallery <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://img.freepik.com/free-photo/friends-sitting-near-bonfire-smiling-embracing-resting-playing-guitar_176420-4178.jpg?w=740&t=st=1677707457~exp=1677708057~hmac=7e2991a3f4df4064dc5ed969e81587f0541acdd5e13693a67a9ea171adad0ce7"
+                  class="card-img-top" alt="canping, freePic">
+                <div class="card-body">
+                  <h4 class="card-title center">Lab Trip</h4>
+
+                  <div class="center">
+                    <button type="button" class="btn btn-light ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-images" viewBox="0 0 16 16">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                        <path
+                          d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z">
+                        </path>
+                      </svg>
+                      Open gallery <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- דף שגיאה 404 -->
+      <div id="error-404-page" class="d-none">
+        <div class="center mt-4">
+          <div class="col-12 col-md-10 col-xl-8">
+            <h1 id="about-page-title" class="text-center display-4">ERROR 404</h1>
+            <h2 id="about-page-subtitle" class="fs-5">Page not found</h2>
+            <hr />
+            <p id="return-to-home-page-link" class="cursor text-primary">click to return to home page</p>
+          </div>
+        </div>
+      </div>
   </main>
 
   <footer class="footer-shadow">
@@ -333,6 +979,9 @@
 
 
   </footer>
+
+
+
 </body>
 
 </html>

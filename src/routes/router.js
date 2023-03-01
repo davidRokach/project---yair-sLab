@@ -49,7 +49,11 @@ export const onChangePage = (page) => {
 
   const pageMap = pageTo_DOM_Map.find((pageMap) => pageMap.page === page); // find the page that was clicked
 
-  if (currentPage === pageMap) return; //do noting if is the smae page
+  if (currentPage === pageMap) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; //scroll to the top of the page
+    return; //do noting if is the smae page
+  }
 
   if (currentPage) currentPage.dom.className = "transition-fadeOut"; // fade-out for the current page
 
@@ -58,7 +62,14 @@ export const onChangePage = (page) => {
       pageMap.dom.className = "d-none";
     }); // hide all pages
 
-    if (pageMap) return (pageMap.dom.className = "d-block transition-fadeIn"); // show the page that was clicked wite fade-in
+    if (pageMap) {
+      pageMap.dom.className = "d-block transition-fadeIn"; // show the page that was clicked wite fade-in
+
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0; //scroll to the top of the page
+
+      return;
+    }
 
     // show 404 page if we got this far (the page was not found, so the 'return' statement was not executed)
     ERROR_PAGE.className = "d-block";
