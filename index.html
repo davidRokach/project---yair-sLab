@@ -13,6 +13,8 @@
 
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script defer src="/src/app.js" type="module"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   <!-- <script defer src="/public/app.js" type="module"></script> -->
 
 
@@ -909,50 +911,53 @@
         <!-- השארת פרטים -->
         <div class="center flex-column m-4 pt-3  ">
           <h2>Leave your details here </h2>
+
           <div class="form col-12 col-md-10 col-xl-8 border p-2 rounded mt-3">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <label for="first-name-contact-field">First Name <span class="text-danger">*</span>
-                </label>
-                <input type="text" class="form-control mb-2" name="first" id="first-name-signup-field" minlength="2"
-                  autocomplete="off" />
-                <span id="first-name-signup-contact-span" class="text-danger"></span>
-              </div>
-              <div class="col-12 col-md-6">
-                <label for="last-name-contact-field">Last Name <span class="text-danger">*</span>
-                </label>
-                <input type="text" class="form-control mb-2" name="last" id="last-name-signup-field" minlength="2"
-                  autocomplete="off" />
-                <span id="last-name-contact-error-span" class="text-danger"></span>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <label for="email-signup-field">Email<span class="text-danger">*</span></label>
-                <input autocomplete="off" class="form-control mb-2" type="text" name="email" id="email-contact-field"
-                  minlength="2" />
-                <span id="email-contact-error-span" class="text-danger"></span>
-
-              </div>
-              <div class="col-12 col-md-6">
-                <label for="phone-signup-field">Phone</label>
-                <input autocomplete="off" class="form-control mb-2" type="text" name="phone" id="phone-contact-field" />
-                <span id="phone-signup-contact-span" class="text-danger"></span>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 ">
-                <label for="message-contact-field">message</label>
-                <input autocomplete="off" class="form-control mb-2 p-4" type="text" name="message"
-                  id="message-contact-field" placeholder="Type your message here..." />
-                <span id="message-contact-error-span" class="text-danger"></span>
+            <form onsubmit="sendEmail(); ">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <label for="first-name-contact-field">First Name <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" class="form-control mb-2" name="first" id="first-name-signup-field" minlength="2"
+                    autocomplete="off" />
+                  <span id="first-name-signup-contact-span" class="text-danger"></span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="last-name-contact-field">Last Name <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" class="form-control mb-2" name="last" id="last-name-signup-field" minlength="2"
+                    autocomplete="off" />
+                  <span id="last-name-contact-error-span" class="text-danger"></span>
+                </div>
               </div>
 
-            </div>
-            <input type="button" id="submit-signup-user-btn" value="Submit" class="btn btn-primary col-12 mb-2"
-              disabled />
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <label for="email-signup-field">Email<span class="text-danger">*</span></label>
+                  <input autocomplete="off" class="form-control mb-2" type="text" name="email" id="email-contact-field"
+                    minlength="2" />
+                  <span id="email-contact-error-span" class="text-danger"></span>
+
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="phone-signup-field">Phone</label>
+                  <input autocomplete="off" class="form-control mb-2" type="text" name="phone"
+                    id="phone-contact-field" />
+                  <span id="phone-signup-contact-span" class="text-danger"></span>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 ">
+                  <label for="message-contact-field">message</label>
+                  <input autocomplete="off" class="form-control mb-2 p-4" type="text" name="message"
+                    id="message-contact-field" placeholder="Type your message here..." />
+                  <span id="message-contact-error-span" class="text-danger"></span>
+                </div>
+
+              </div>
+              <input type="submit" id="submit-signup-user-btn" value="Submit" class="btn btn-primary col-12 mb-2" />
           </div>
           </form>
         </div>
@@ -980,7 +985,20 @@
 
   </footer>
 
+  <script>
+    const sendaEmail = () => {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "username",
+        Password: "password",
+        To: "them@website.com",
+        From: "you@isp.com",
+        Subject: "This is the subject",
+        Body: "And this is the body",
+      }).then((message) => alert(message));
+    };
 
+  </script>
 
 </body>
 
